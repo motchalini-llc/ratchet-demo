@@ -4,6 +4,8 @@ Live demo for the **[*-ratchet family](https://github.com/motchalini-llc)** — 
 
 👉 **See [PR #1](https://github.com/motchalini-llc/ratchet-demo/pull/1)** — a single "quick fix" commit that silences the type checker (`as any`), skips a test (`it.skip` / `it.only`) and mutes the linter (`eslint-disable`). All three gates go red, with inline annotations on the offending lines.
 
+[![Demo: one 'quick fix' PR trips all three ratchet gates](docs/ratchet-demo.gif)](https://github.com/motchalini-llc/ratchet-demo/pull/1)
+
 | Gate | Catches |
 |---|---|
 | [Type Ratchet](https://github.com/marketplace/actions/type-ratchet) | `any` / `as any` / `@ts-ignore` / `# type: ignore` |
