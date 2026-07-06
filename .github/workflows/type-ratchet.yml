@@ -1,0 +1,12 @@
+name: Type Ratchet Gate
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: motchalini-llc/type-ratchet@v1
+        with:
+          language: typescript
